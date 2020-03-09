@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        .logo {
+            width: 20%;
+        }
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-image: url('https://pngimage.net/wp-content/uploads/2018/06/pokemon-background-png.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .pokemon-container {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .pokemon-card {
+            padding: 25px 0;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+        }
+        .poke-gif {
+            width: 70px;
+            transition: .4s;
+        }
+        .poke-gif:hover {
+            transform: scale(1.4);
+        }
+        .nes-dialog {
+            text-align: center;
+            /* width: 80%; */
+            margin: 0 auto;
+        }
+        .poke-body {
+            background-color: white;
+            width: 10%;
+        }
+    </style>
+    <link rel="shortcut icon" href="https://i.ya-webdesign.com/images/pokemon-ball-png.png" />
+    <title>Pokemons</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img class="logo" src="https://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png" alt="pokemon">
+        </div>
+        <div class="pokemon-container"></div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>
